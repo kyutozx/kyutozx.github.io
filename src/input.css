@@ -46,3 +46,17 @@ svg {
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45 w-[30px];
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
