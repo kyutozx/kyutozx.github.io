@@ -662,8 +662,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mb-16 {
@@ -1515,8 +1515,8 @@ svg {
     margin-right: auto;
   }
 
-  .lg\:ml-44 {
-    margin-left: 11rem;
+  .lg\:ml-48 {
+    margin-left: 12rem;
   }
 
   .lg\:block {
