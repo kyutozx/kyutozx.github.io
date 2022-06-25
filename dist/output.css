@@ -1519,6 +1519,10 @@ svg {
     margin-left: 12rem;
   }
 
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
