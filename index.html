@@ -17,7 +17,7 @@
 <body>
 
     <!-- Header Start -->
-    <header class="top-0 absolute lg:top-95 z-30 lg:z-10 flex w-full items-center bg-blue-800 js-show-on-scroll">
+    <header class="top-0 absolute lg:top-95 z-30 lg:z-10 flex w-full items-center bg-blue-800 faded">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-1">
@@ -34,7 +34,7 @@
               id="nav-menu"
               class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-blue-700 lg:bg-blue-800 py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:shadow-none"
             >
-              <ul class="block lg:flex">
+              <ul class="block lg:flex only:">
                 <li class="group">
                   <a href="#about" class="mx-4 lg:mx-2 xl:mx-4 flex py-2 text-sm lg:text-xl xl:text-2xl text-white hover:text-blue-400">About</a>
                 </li>
@@ -61,9 +61,9 @@
           <div class="flex flex-wrap">
             <div class="w-full self-center px-4">
                 <div class="relative">
-                    <img src="dist/profile.png" alt="Latu Alam Saputra" class="outline outline-20 outline-blue-900 rounded-full relative z-10 lg:z-30 mx-auto max-w-full lg:max-w-400 hover:-scale-x-100 js-show-on-scroll" />
-                    <h1 class="pt-6 lg:pt-10 font-semibold text-white text-center text-2xl lg:text-4xl js-show-on-scroll">Latu Alam Saputra</h1>
-                    <h3 class="pt-0.5 pb-6 italic font-thin text-slate-400 text-center text-lg lg:text-xl js-show-on-scroll">@KyutoZx</h3>
+                    <img src="dist/profile.png" alt="Latu Alam Saputra" class="outline outline-20 outline-blue-900 rounded-full relative z-10 lg:z-30 mx-auto max-w-full lg:max-w-400 hover:-scale-x-100 faded" />
+                    <h1 class="pt-6 lg:pt-10 font-semibold text-white text-center text-2xl lg:text-4xl faded">Latu Alam Saputra</h1>
+                    <h3 class="pt-0.5 pb-6 italic font-thin text-slate-400 text-center text-lg lg:text-xl faded">@KyutoZx</h3>
                 </div>
             </div>
           </div>
@@ -76,8 +76,8 @@
       <div class="container">
         <h4 class="mb-1 text-base text-center font-bold uppercase text-blue-400">About</h4>
         <h2 class="mb-12 text-center text-3xl font-bold text-dark dark:text-white lg:text-4xl">About Me</h2>
-        <div class="flex flex-wrap-reverse">
-          <div class="mb-10 w-full px-4 lg:w-1/2 js-show-on-scroll">
+        <div class="flex flex-wrap-reverse elemen-transisi">
+          <div class="mb-10 w-full px-4 lg:w-1/2 elemen-transisi">
             <p class="max-w-xl lg:ml-48 lg:w-2/3 lg:text-right text-base font-medium text-secondary lg:text-lg">
               Halo semua, saya <span class="text-blue-500 text-xl">Latu Alam Saputra</span>. <br>
               Saya berkuliah di <span class="text-blue-500 text-lg">Politeknik Negeri Batam</span> jurusan <span class="text-blue-500 text-lg">Teknik Informatika</span>. 
@@ -86,7 +86,7 @@
               Saya sudah tertarik dengan Web sejak SMP, karena saya pernah mengubah beberapa kode <span class="text-blue-500 text-lg">HTML</span> dan <span class="text-blue-500 text-lg">CSS</span> di template <span class="text-blue-500 text-lg">Blog</span>, dan itu menyenangkan. 
               Kedepannya saya akan membuat beberapa <span class="text-blue-500 text-lg">Project</span> lagi, untuk menambah <span class="text-blue-500 text-lg">Portfolio</span>.<br><span class="text-blue-500 text-xl">Terima kasih sudah membaca :)</span></p>
           </div>
-          <div class="w-full mb-10 px-4 lg:w-1/2 js-show-on-scroll">
+          <div class="w-full mb-10 px-4 lg:w-1/2 elemen-transisi">
             <div class="card-zoom lg:ml-6">
               <img class="card-zoom-image hover:blur-[0.5px]" src="dist/me.jpeg" alt="Latu Alam Saputra">
             </div>  
@@ -102,7 +102,7 @@
         <h4 class="mb-1 text-base text-center font-bold uppercase text-blue-400">Skills</h4>
         <h2 class="mb-12 text-center text-3xl font-bold text-dark dark:text-white lg:text-4xl">My Skills</h2>
         <div class="flex flex-wrap lg:w-1/2 lg:mx-auto">
-          <div class="mb-10 w-full px-4 lg:w-1/2 js-show-on-scroll">
+          <div class="mb-10 w-full px-4 lg:w-1/2 elemen-transisi">
             <ul class="list-disc list-inside text-base font-medium text-secondary lg:text-lg">
               <li class="hover:text-blue-400">HTML, CSS, JavaScript</li>
               <li class="hover:text-blue-400">Bootstrap</li>
@@ -110,7 +110,7 @@
               <li class="hover:text-blue-400">Reactjs</li>
             </ul>
           </div>
-          <div class="w-full px-4 lg:w-1/2 js-show-on-scroll">
+          <div class="w-full px-4 lg:w-1/2 elemen-transisi">
             <ul class="list-disc list-inside text-base font-medium text-secondary lg:text-lg">
               <li class="hover:text-blue-400">Php, Code Igniter</li>
               <li class="hover:text-blue-400">Ruby, Ruby on Rails</li>
@@ -134,7 +134,7 @@
         </div>
 
         <div class="flex flex-wrap">
-          <div id="p1" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out js-show-on-scroll">
+          <div id="p1" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out elemen-transisi">
             <div class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800">
               <img src="dist/project1.png" alt="Project 1" class="w-full" />
               <div class="py-8 px-6">
@@ -146,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div id="p2" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out js-show-on-scroll">
+          <div id="p2" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out elemen-transisi">
             <div class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800">
               <img src="dist/project1.png" alt="Project 2" class="w-full" />
               <div class="py-8 px-6">
@@ -158,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div id="p3" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out js-show-on-scroll">
+          <div id="p3" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out elemen-transisi">
             <div class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800">
               <img src="dist/project1.png" alt="Project 3" class="w-full" />
               <div class="py-8 px-6">
@@ -170,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div id="p4" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out js-show-on-scroll">
+          <div id="p4" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out elemen-transisi">
             <div class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800">
               <img src="dist/project1.png" alt="Project 4" class="w-full" />
               <div class="py-8 px-6">
@@ -182,7 +182,7 @@
               </div>
             </div>
           </div>
-          <div  id="p5" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out js-show-on-scroll">
+          <div  id="p5" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out elemen-transisi">
             <div class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800">
               <img src="dist/project1.png" alt="Project 5" class="w-full" />
               <div class="py-8 px-6">
@@ -194,7 +194,7 @@
               </div>
             </div>
           </div>
-          <div id="p6" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out js-show-on-scroll">
+          <div id="p6" class="w-full px-4 md:w-1/2 lg:w-1/3 hover:-translate-y-6 transition duration-1000 ease-in-out elemen-transisi">
             <div class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800">
               <img src="dist/project1.png" alt="Project 6" class="w-full" />
               <div class="py-8 px-6">
@@ -224,19 +224,19 @@
         <form name="kyutozx-form">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="p-4 mb-8 hidden rounded-md alert-form text-base mt-10 bg-green-400 text-green-900">Thank you, the form has been successfully submitted</div>
-            <div class="mb-8 w-full px-4 js-show-on-scroll">
+            <div class="mb-8 w-full px-4 elemen-transisi">
               <label for="name" class="text-base font-bold text-blue-400">Name</label>
               <input type="text" id="name" name="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400" />
             </div>
-            <div class="mb-8 w-full px-4 js-show-on-scroll">
+            <div class="mb-8 w-full px-4 elemen-transisi">
               <label for="email" class="text-base font-bold text-blue-400">Email</label>
               <input type="email" id="email" name="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400" />
             </div>
-            <div class="mb-8 w-full px-4 js-show-on-scroll">
+            <div class="mb-8 w-full px-4 elemen-transisi">
               <label for="message" class="text-base font-bold text-blue-400">Message</label>
               <textarea type="text" id="message" name="message" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400"></textarea>
             </div>
-            <div class="flex items-center justify-center btn-submit js-show-on-scroll">
+            <div class="flex items-center justify-center btn-submit elemen-transisi">
               <button type="submit" class="w-full justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-full text-white bg-blue-400 hover:opacity-80 transition ease-in-out duration-150">
                 Submit
               </button>              
@@ -257,35 +257,12 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-4">
+    <footer class="bg-dark pt-8 pb-4">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/2">
-            <h2 class="mb-5 text-4xl font-bold text-white">KyutoZx</h2>
-            <h3 class="mb-2 text-2xl font-bold">Contact me</h3>
-            <p>latualamsaputra@gmail.com</p>
-            <p>@latualamsaputra</p>
-            <p>@kyutozx</p>
-          </div>
-          <div class="mb-12 w-full px-4 md:w-1/2">
-            <h3 class="mb-5 text-xl font-semibold text-white">Navigation</h3>
-            <ul class="text-slate-300">
-              <li>
-                <a href="#home" class="mb-3 inline-block text-base hover:text-blue-400">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="mb-3 inline-block text-base hover:text-blue-400">About Me</a>
-              </li>
-              <li>
-                <a href="#skills" class="mb-3 inline-block text-base hover:text-blue-400">Skills</a>
-              </li>
-              <li>
-                <a href="#portfolio" class="mb-3 inline-block text-base hover:text-blue-400">Portfolio</a>
-              </li>
-              <li>
-                <a href="#contact" class="mb-3 inline-block text-base hover:text-blue-400">Contact</a>
-              </li>
-            </ul>
+          <div class="mb-8 w-full mx-auto px-4 font-medium text-slate-300 text-center">
+            <h2 class="mb-5 text-4xl font-bold text-white"><span class="text-blue-400">K</span>yuto<span class="text-blue-400">Z</span>x</h2> 
+            <p>Don't click <span class="text-pink-500">Love</span><br>Because she is mine<br>And will always be mine <3</p>          
           </div>
         </div>
 
@@ -368,7 +345,7 @@
     <!-- Footer End -->
 
     <!-- Back to top Start -->
-    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 items-center justify-center rounded-full bg-blue-500 p-4 hover:animate-pulse" id="to-top">
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 items-center justify-center rounded-full bg-blue-500 p-4 rotate-45 transition-all hover:rotate-0 hover:animate-pulse" id="to-top">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" fill="white" style="enable-background:new 0 0 512 512;" xml:space="preserve">
    <polygon points="0,249.888 245.004,8.139 490,249.888 490,481.861 245.004,239.71 0,481.861"/>
@@ -377,14 +354,14 @@
     <!-- Back to top End -->
 
     <!-- Dark Mode Start -->
-      <div class="flex fixed bottom-20 right-4 z-[9999] h-12 w-12 items-center justify-center rounded-full bg-blue-500 p-4 hover:animate-pulse">
+      <div class="flex fixed bottom-20 right-4 z-[9999] h-12 w-12 items-center justify-center rounded-full bg-blue-500 p-4 hover:rotate-45 ease-in transition-all">
         <input type="checkbox" class="hidden" id="dark-toggle" />
         <label for="dark-toggle">
-          <div class="flex h-8 w-8 cursor-pointer items-center rounded-full bg-white dark:bg-dark p-1">
-            <svg id="toggle-dark" class="w-6 h-6 hidden" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <div class="flex h-10 w-10 cursor-pointer items-center rounded-full bg-white dark:bg-dark p-1">
+            <svg id="toggle-dark" class="w-8 h-8 hidden" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>    
-            <svg id="toggle-light" class="w-6 h-6 hidden" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <svg id="toggle-light" class="w-8 h-8 hidden" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd">
               </path>
             </svg> 

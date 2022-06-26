@@ -64,22 +64,17 @@ window.onscroll = function () {
   }
 
   // scroll
-  const callback = function (entries) {
-    entries.forEach((entry) => {
-      console.log(entry);
-  
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate-fadeIn");
-      } else {
-        entry.target.classList.remove("animate-fadeIn");
-      }
-    });
-  };
-  
-  const observer = new IntersectionObserver(callback);
-  
-  const targets = document.querySelectorAll(".js-show-on-scroll");
-  targets.forEach(function (target) {
-    target.classList.add("opacity-0");
-    observer.observe(target);
-  });
+  window.addEventListener("scroll", () => {
+    let elements = document.querySelectorAll(".elemen-transisi");
+    
+    for(let i = 0; i < elements.length; i++){
+        let heightWindow = window.innerHeight;
+        let topElement = elements[i].getBoundingClientRect().top;
+        let scroll = 200;
+        if(topElement < heightWindow - scroll){
+            elements[i].classList.add("transisi");
+        }else{
+            elements[i].classList.remove("transisi");
+        }
+    }
+  })

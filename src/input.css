@@ -47,20 +47,6 @@ svg {
   @apply -rotate-45 w-[30px];
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 2s ease-in forwards;
-}
-
 .card-zoom {
   @apply relative flex items-center justify-center overflow-hidden shadow-xl w-full lg:w-1/2 h-[400px] rounded-2xl;
 }
@@ -70,4 +56,32 @@ svg {
 
 .card-zoom:hover .card-zoom-image {
   @apply scale-[3];
+}
+
+.faded {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.elemen-transisi {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.transisi {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
 }
