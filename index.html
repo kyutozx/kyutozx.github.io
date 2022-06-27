@@ -79,12 +79,12 @@
         <div class="flex flex-wrap-reverse elemen-transisi">
           <div class="mb-10 w-full px-4 lg:w-1/2 elemen-transisi">
             <p class="max-w-xl lg:ml-48 lg:w-2/3 lg:text-right text-base font-medium text-secondary lg:text-lg">
-              Halo semua, saya <span class="text-blue-500 text-xl">Latu Alam Saputra</span>. <br>
-              Saya berkuliah di <span class="text-blue-500 text-lg">Politeknik Negeri Batam</span> jurusan <span class="text-blue-500 text-lg">Teknik Informatika</span>. 
-              Hobi saya bermain <span class="text-blue-500 text-lg">Game</span>, <span class="text-blue-500 text-lg">Coding</span>, <span class="text-blue-500 text-lg">Desain</span>, dan <span class="text-blue-500 text-lg">membaca</span>.
-              Saya suka mempelajari hal-hal baru, terutama yang menarik seperti <span class="text-blue-500 text-lg">Web Programming</span> ataupun sejenisnya.
-              Saya sudah tertarik dengan Web sejak SMP, karena saya pernah mengubah beberapa kode <span class="text-blue-500 text-lg">HTML</span> dan <span class="text-blue-500 text-lg">CSS</span> di template <span class="text-blue-500 text-lg">Blog</span>, dan itu menyenangkan. 
-              Kedepannya saya akan membuat beberapa <span class="text-blue-500 text-lg">Project</span> lagi, untuk menambah <span class="text-blue-500 text-lg">Portfolio</span>.<br><span class="text-blue-500 text-xl">Terima kasih sudah membaca :)</span></p>
+              Halo semua, saya <span class="text-blue-500">Latu Alam Saputra</span>. <br>
+              Saya berkuliah di <span class="text-blue-500">Politeknik Negeri Batam</span> jurusan <span class="text-blue-500 text-lg">Teknik Informatika</span>. 
+              Hobi saya bermain <span class="text-blue-500">Game</span>, <span class="text-blue-500">Coding</span>, <span class="text-blue-500">Desain</span>, dan <span class="text-blue-500">membaca</span>.
+              Saya suka mempelajari hal-hal baru, terutama yang menarik seperti <span class="text-blue-500">Web Programming</span> ataupun sejenisnya.
+              Saya sudah tertarik dengan Web sejak SMP, karena saya pernah mengubah beberapa kode <span class="text-blue-500">HTML</span> dan <span class="text-blue-500">CSS</span> di template <span class="text-blue-500">Blog</span>, dan itu menyenangkan. 
+              Kedepannya saya akan membuat beberapa <span class="text-blue-500">Project</span> lagi, untuk menambah <span class="text-blue-500">Portfolio</span>.<br><span class="text-blue-500">Terima kasih sudah membaca :)</span></p>
           </div>
           <div class="w-full mb-10 px-4 lg:w-1/2 elemen-transisi">
             <div class="card-zoom lg:ml-6">
@@ -112,7 +112,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2 elemen-transisi">
             <ul class="list-disc list-inside text-base font-medium text-secondary lg:text-lg">
-              <li class="hover:text-blue-400">Php, Code Igniter</li>
+              <li class="hover:text-blue-400">PHP, Code Igniter</li>
               <li class="hover:text-blue-400">Ruby, Ruby on Rails</li>
               <li class="hover:text-blue-400">SQL</li>
               <li class="hover:text-blue-400">Basic Photoshop, Figma</li>
@@ -223,7 +223,7 @@
 
         <form name="kyutozx-form">
           <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="p-4 mb-8 hidden rounded-md alert-form text-base mt-10 bg-green-400 text-green-900">Thank you, the form has been successfully submitted</div>
+            <div class="p-4 mb-8 hidden rounded-md alert-form text-base mt-10 bg-green-400 text-green-900">Thank you, the form has been successfully submitted. Refresh to send again</div>
             <div class="mb-8 w-full px-4 elemen-transisi">
               <label for="name" class="text-base font-bold text-blue-400">Name</label>
               <input type="text" id="name" name="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400" />
@@ -236,7 +236,7 @@
               <label for="message" class="text-base font-bold text-blue-400">Message</label>
               <textarea type="text" id="message" name="message" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400"></textarea>
             </div>
-            <div class="flex items-center justify-center btn-submit elemen-transisi">
+            <div class="flex items-center justify-center btn-submit">
               <button type="submit" class="w-full justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-full text-white bg-blue-400 hover:opacity-80 transition ease-in-out duration-150">
                 Submit
               </button>              
@@ -248,6 +248,11 @@
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 Processing...
+              </button>
+            </div>
+            <div class="flex items-center justify-center btn-done hidden">
+              <button type="button" class="w-full justify-center inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-full text-white bg-green-400 opacity-80 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
+                Done
               </button>
             </div>
           </div>
@@ -262,7 +267,7 @@
         <div class="flex flex-wrap">
           <div class="mb-8 w-full mx-auto px-4 font-medium text-slate-300 text-center">
             <h2 class="mb-5 text-4xl font-bold text-white"><span class="text-blue-400">K</span>yuto<span class="text-blue-400">Z</span>x</h2> 
-            <p>Don't click <span class="text-pink-500">Love</span><br>Because she is mine<br>And will always be mine <3</p>          
+            <p class="text-dark">Don't click Love</span><br>Because she is mine<br>And will always be mine <3</p>          
           </div>
         </div>
 
@@ -369,12 +374,14 @@
         </label>
       </div>
     <!-- Dark Mode End -->
+
     <script src="dist/script.js"></script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzkqD9jxqk1Gooffo3rPE8MkA2tTMEEQiNWPBFtcEXZWo02TZ2D1UtssrNzT6nzSpRr/exec';
       const form = document.forms['kyutozx-form'];
       const btnSubmit = document.querySelector('.btn-submit');
       const btnLoading = document.querySelector('.btn-loading');
+      const btnDone = document.querySelector('.btn-done');
       const alertForm = document.querySelector('.alert-form');
 
       form.addEventListener('submit', e => {
@@ -383,7 +390,7 @@
         btnLoading.classList.toggle('hidden');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
-            btnSubmit.classList.toggle('hidden');
+            btnDone.classList.toggle('hidden');
             btnLoading.classList.toggle('hidden');
             alertForm.classList.toggle('hidden');
             form.reset();
